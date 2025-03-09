@@ -270,24 +270,7 @@ header .btn-started:hover {
   line-height: 20px;
   color: #757575;
 }
-.doctors {
-  padding: 60px 0;
-  left: 0;
-}
-.doctors-content {
-  display: flex;
-  align-items: center;
-  gap: 123px;
-}
-.doctors-img {
-  position: relative;
-  max-width: 545px;
-  height: 582px;
-  left: 135px;
-}
-.doctors-img img {
-  width: 100%;
-}
+
 .feedback {
   position: absolute;
   min-width: 230px;
@@ -299,6 +282,145 @@ header .btn-started:hover {
 .feedback{
   width: 100%;
 }
+.doctors{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.doctors .container {
+  display: flex;
+  align-items: center;
+  gap: 123px;
+  flex-wrap: wrap;
+}
+.doctors-img {
+  position: relative;
+  max-width: 545px;
+  height: 582px;
+  flex: 1;
+}
+.doctors-img img {
+  width: 100%;
+}
+.feedback {
+  width: 230px;
+  height: 77px;
+}
+.doctor-card {
+  position: absolute;
+  top: 220px;
+  left: -120px;
+  background: #fff;
+  margin: 34px 26px 20px 17px;
+  border-radius: 20px;
+  width: 270px;
+  height: 174px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.doctor-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+.icon-1 {
+  min-width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 170px;
+  left: 135px;
+  transform: translateX(-50%);
+}
+.icon-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.doctor-info h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #3D3D3F;
+  margin-bottom: 5px;
+}
+.doctor-info-all p{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #3D3D3F66;
+}
+.doctor-info-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 10px 0;
+}
+.doctor-location{
+  display: flex;
+}
+.doctor-location img{
+  width: 9px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.doctors-text {
+  flex: 1;
+  max-width: 500px;
+}
+.doctors-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.doctors-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.doctors-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.doctors-item::before {
+  content: "✔";
+  font-size: 18px;
+  color: white;
+  background: #5AAEFF;
+  border-radius: 50%;
+}
+.explore-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #40A3F8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.explore-btn:hover {
+  background:#FFFFFF;
+  color: #40A3F8;
+}
+
+
 
 .our_service h1{
   text-align: center;
@@ -552,7 +674,7 @@ header .btn-started:hover {
 .reviews-quote{
   position: absolute;
   right: 41px;
-  top: -20px;
+  top: 0px;
   width: 40px;
   height: 40px;
 }
@@ -587,6 +709,30 @@ header .btn-started:hover {
   font-weight: 400;
   line-height: 25px;
   color: #454D5D;
+}
+.owl-nav .owl-prev span{
+  display: none;
+}
+.owl-nav .owl-prev{
+  width: 33.45px;
+  height: 32px;
+  border-radius: 5px;
+  background: #40A3F8!important;
+  position: absolute;
+  top: 47%;
+  left: -50px;
+}
+.owl-nav .owl-next span{
+  display: none;
+}
+.owl-nav .owl-next{
+  width: 33.45px;
+  height: 32px;
+  border-radius: 5px;
+  background: #40A3F8!important;
+  position: absolute;
+  top: 47%;
+  right: -50px;
 }
 .appointment{
   margin-bottom: 124px;
